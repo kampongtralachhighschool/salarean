@@ -14,9 +14,6 @@
             font-family: 'Kantumruy Pro', sans-serif;
             background-color: #f3f4f6;
         }
-        .modal-active {
-            display: flex !important;
-        }
     </style>
 </head>
 <body class="bg-slate-50 min-h-screen flex flex-col">
@@ -38,7 +35,8 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             
             <!-- 1. ឆែកមើលលទ្ធផលសិក្សាសិស្ស -->
-            <button onclick="openModal('modal-result')" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group border border-gray-100 hover:border-blue-300">
+            <!-- សូមដូរពាក្យ 'https://kampongtralachhighschool.github.io/refactored-rotary-phone/' ទៅជា Link របស់អ្នក -->
+            <button onclick="window.open('https://បញ្ចូល_Link_ឆែកលទ្ធផលទីនេះ.com', '_blank')" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group border border-gray-100 hover:border-blue-300">
                 <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors text-blue-600">
                     <i data-lucide="graduation-cap" class="w-8 h-8"></i>
                 </div>
@@ -46,19 +44,19 @@
                 <p class="text-gray-500 text-sm">មើលពិន្ទុ និងចំណាត់ថ្នាក់ប្រចាំខែ/ឆមាស</p>
             </button>
 
-            <!-- 2. ឆែកមើលរបាយការណ៍សិក្សា (Password Protected) -->
-            <button onclick="openModal('modal-password')" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group border border-gray-100 hover:border-red-300">
+            <!-- 2. ឆែកមើលរបាយការណ៍សិក្សា -->
+            <!-- សូមដូរពាក្យ 'https://បញ្ចូល_Link_របាយការណ៍ទីនេះ.com' ទៅជា Link របស់អ្នក -->
+            <button onclick="window.open('https://script.google.com/macros/s/AKfycbwDmMPakyK5NGy5R0IxBk4rQeraO2vdsyFDBaLB_X-JTqBa8T39Fydqs1OvoylEF03Z5Q/exec', '_blank')" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group border border-gray-100 hover:border-red-300">
                 <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-red-600 group-hover:text-white transition-colors text-red-600">
                     <i data-lucide="file-bar-chart-2" class="w-8 h-8"></i>
                 </div>
                 <h3 class="text-xl font-bold text-gray-800 mb-2">របាយការណ៍សិក្សា</h3>
-                <p class="text-gray-500 text-sm flex items-center gap-1 justify-center">
-                    <i data-lucide="lock" class="w-4 h-4"></i> ត្រូវការលេខសម្ងាត់
-                </p>
+                <p class="text-gray-500 text-sm">របាយការណ៍ប្រចាំខែ និងប្រចាំឆ្នាំ</p>
             </button>
 
             <!-- 3. ទំនាក់ទំនងមកគ្រូបន្ទុកថ្នាក់ -->
-            <button onclick="openModal('modal-contact-teacher')" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group border border-gray-100 hover:border-green-300">
+            <!-- សូមដូរពាក្យ 'https://បញ្ចូល_Link_ទំនាក់ទំនងគ្រូទីនេះ.com' ទៅជា Link របស់អ្នក -->
+            <button onclick="window.open('https://បញ្ចូល_Link_ទំនាក់ទំនងគ្រូទីនេះ.com', '_blank')" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group border border-gray-100 hover:border-green-300">
                 <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-600 group-hover:text-white transition-colors text-green-600">
                     <i data-lucide="users" class="w-8 h-8"></i>
                 </div>
@@ -67,7 +65,8 @@
             </button>
 
             <!-- 4. ទំនាក់ទំនងមកគណៈគ្រប់គ្រងសាលា -->
-            <button onclick="openModal('modal-contact-admin')" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group border border-gray-100 hover:border-purple-300">
+            <!-- សូមដូរពាក្យ 'https://បញ្ចូល_Link_រដ្ឋបាលសាលាទីនេះ.com' ទៅជា Link របស់អ្នក -->
+            <button onclick="window.open('https://បញ្ចូល_Link_រដ្ឋបាលសាលាទីនេះ.com', '_blank')" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group border border-gray-100 hover:border-purple-300">
                 <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors text-purple-600">
                     <i data-lucide="building" class="w-8 h-8"></i>
                 </div>
@@ -76,7 +75,8 @@
             </button>
 
             <!-- 5. ដាក់ពាក្យបណ្ដឹងតវ៉ា -->
-            <button onclick="openModal('modal-complaint')" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group border border-gray-100 hover:border-orange-300">
+            <!-- សូមដូរពាក្យ 'https://បញ្ចូល_Link_ដាក់ពាក្យបណ្ដឹងទីនេះ.com' ទៅជា Link (ឧ. Google Form) របស់អ្នក -->
+            <button onclick="window.open('https://បញ្ចូល_Link_ដាក់ពាក្យបណ្ដឹងទីនេះ.com', '_blank')" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group border border-gray-100 hover:border-orange-300">
                 <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-orange-600 group-hover:text-white transition-colors text-orange-600">
                     <i data-lucide="scale" class="w-8 h-8"></i>
                 </div>
@@ -84,8 +84,8 @@
                 <p class="text-gray-500 text-sm">រាយការណ៍បញ្ហា ឬស្នើសុំការដោះស្រាយផ្សេងៗ</p>
             </button>
 
-            <!-- 6. ចូលសាលាឌីជីថល -->
-            <button onclick="openModal('modal-digital')" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group border border-gray-100 hover:border-indigo-300">
+            <!-- 6. ចូលសាលាឌីជីថល (បានដាក់ Link រួចរាល់) -->
+            <button onclick="window.open('https://sala.moeys.gov.kh/kh', '_blank')" class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group border border-gray-100 hover:border-indigo-300">
                 <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-colors text-indigo-600">
                     <i data-lucide="monitor-play" class="w-8 h-8"></i>
                 </div>
@@ -95,17 +95,20 @@
 
         </div>
 
-        <!-- 7. បណ្ដាញសង្គមផ្លូវការ -->
+        <!-- 7. បណ្ដាញសង្គមផ្លូវការ (បានដាក់ Link រួចរាល់) -->
         <div class="mt-12 text-center">
             <h2 class="text-2xl font-bold text-gray-800 mb-6">បណ្ដាញសង្គមផ្លូវការសាលារៀន</h2>
             <div class="flex justify-center gap-4 flex-wrap">
-                <button onclick="openModal('modal-social-msg')" class="flex items-center gap-2 bg-[#1877F2] text-white px-6 py-3 rounded-full hover:bg-blue-700 transition shadow-md">
+                <!-- Facebook -->
+                <button onclick="window.open('https://www.facebook.com/share/14USbR2yavT/', '_blank')" class="flex items-center gap-2 bg-[#1877F2] text-white px-6 py-3 rounded-full hover:bg-blue-700 transition shadow-md">
                     <i data-lucide="facebook" class="w-5 h-5"></i> Facebook
                 </button>
-                <button onclick="openModal('modal-social-msg')" class="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition shadow-md">
+                <!-- TikTok -->
+                <button onclick="window.open('https://www.tiktok.com/@hunsenkampongtralach?_r=1&_t=ZS-94BwykFDNnI', '_blank')" class="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition shadow-md">
                     <i data-lucide="music-2" class="w-5 h-5"></i> TikTok
                 </button>
-                <button onclick="openModal('modal-social-msg')" class="flex items-center gap-2 bg-[#0088cc] text-white px-6 py-3 rounded-full hover:bg-blue-500 transition shadow-md">
+                <!-- Telegram -->
+                <button onclick="window.open('https://t.me/+xg-xMFFh95NlOGM1', '_blank')" class="flex items-center gap-2 bg-[#0088cc] text-white px-6 py-3 rounded-full hover:bg-blue-500 transition shadow-md">
                     <i data-lucide="send" class="w-5 h-5"></i> Telegram
                 </button>
             </div>
@@ -117,165 +120,9 @@
         <p>&copy; រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ វិទ្យាល័យហ៊ុនសែនកំពង់ត្រឡាច ២០២៦</p>
     </footer>
 
-    <!-- ================= MODALS SECTION ================= -->
-
-    <!-- Password Modal for Reports -->
-    <div id="modal-password" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
-        <div class="bg-white rounded-2xl w-full max-w-md p-6 shadow-2xl transform transition-all">
-            <div class="flex justify-between items-center mb-4">
-                <h3 class="text-xl font-bold text-gray-900 flex items-center gap-2">
-                    <i data-lucide="lock" class="text-red-500"></i> បញ្ចូលពាក្យសម្ងាត់
-                </h3>
-                <button onclick="closeModal('modal-password')" class="text-gray-400 hover:text-gray-600">
-                    <i data-lucide="x"></i>
-                </button>
-            </div>
-            <p class="text-gray-600 mb-4 text-sm">សូមបញ្ចូលពាក្យសម្ងាត់ ដើម្បីចូលមើលរបាយការណ៍សម្ងាត់នេះ។</p>
-            <input type="password" id="report-pwd-input" placeholder="ពាក្យសម្ងាត់..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4">
-            <p id="pwd-error" class="text-red-500 text-sm mb-4 hidden">ពាក្យសម្ងាត់មិនត្រឹមត្រូវទេ! សូមសាកល្បងម្ដងទៀត។</p>
-            <div class="flex justify-end gap-3">
-                <button onclick="closeModal('modal-password')" class="px-5 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition">បោះបង់</button>
-                <button onclick="checkPassword()" class="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">បញ្ជាក់</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Generic Message Modal -->
-    <div id="modal-message" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
-        <div class="bg-white rounded-2xl w-full max-w-sm p-6 shadow-2xl text-center">
-            <div id="msg-icon" class="mx-auto w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
-                <i data-lucide="info" class="w-8 h-8"></i>
-            </div>
-            <h3 id="msg-title" class="text-xl font-bold text-gray-900 mb-2">ចំណងជើង</h3>
-            <p id="msg-desc" class="text-gray-600 mb-6">ខ្លឹមសារលម្អិតនឹងបង្ហាញនៅទីនេះ។</p>
-            <button onclick="closeModal('modal-message')" class="w-full px-5 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">បិទប្រអប់</button>
-        </div>
-    </div>
-
-    <!-- Contact Form Modal (Template for Teacher/Admin/Complaint) -->
-    <div id="modal-form" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
-        <div class="bg-white rounded-2xl w-full max-w-lg p-6 shadow-2xl overflow-y-auto max-h-[90vh]">
-            <div class="flex justify-between items-center mb-4">
-                <h3 id="form-title" class="text-xl font-bold text-gray-900">ទម្រង់ទំនាក់ទំនង</h3>
-                <button onclick="closeModal('modal-form')" class="text-gray-400 hover:text-gray-600">
-                    <i data-lucide="x"></i>
-                </button>
-            </div>
-            <div class="space-y-4">
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">ឈ្មោះរបស់អ្នក</label>
-                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">លេខទូរសព្ទ</label>
-                    <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">ខ្លឹមសារ</label>
-                    <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                </div>
-                <button onclick="submitForm()" class="w-full px-5 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition flex justify-center items-center gap-2">
-                    <i data-lucide="send" class="w-5 h-5"></i> បញ្ជូន
-                </button>
-            </div>
-        </div>
-    </div>
-
-
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
-
-        // Modal Functions
-        function openModal(modalId) {
-            // Handle specific feature click events
-            if(modalId === 'modal-result') {
-                showMessage('លទ្ធផលសិក្សា', 'ប្រព័ន្ធឆែកលទ្ធផលសិក្សាកំពុងស្ថិតក្នុងការអភិវឌ្ឍ។ វានឹងដំណើរការក្នុងពេលឆាប់ៗនេះ។', 'graduation-cap', 'text-blue-600', 'bg-blue-100');
-                return;
-            }
-            if(modalId === 'modal-contact-teacher') {
-                openForm('ទំនាក់ទំនងគ្រូបន្ទុកថ្នាក់', 'សូមបំពេញព័ត៌មានខាងក្រោម ដើម្បីផ្ញើសារទៅកាន់គ្រូបន្ទុកថ្នាក់។');
-                return;
-            }
-            if(modalId === 'modal-contact-admin') {
-                openForm('ទំនាក់ទំនងគណៈគ្រប់គ្រងសាលា', 'សូមបំពេញព័ត៌មានខាងក្រោម ដើម្បីផ្ញើសារទៅកាន់រដ្ឋបាលសាលា។');
-                return;
-            }
-            if(modalId === 'modal-complaint') {
-                openForm('ដាក់ពាក្យបណ្ដឹងតវ៉ា', 'សូមរៀបរាប់ពីបញ្ហា ឬការតវ៉ារបស់អ្នកនៅទីនេះ។ ព័ត៌មានរបស់អ្នកនឹងត្រូវបានរក្សាការសម្ងាត់។');
-                return;
-            }
-            if(modalId === 'modal-digital') {
-                showMessage('សាលាឌីជីថល', 'ស្វាគមន៍មកកាន់ប្រព័ន្ធ E-Learning! សូមទាក់ទងរដ្ឋបាលដើម្បីទទួលគណនីប្រើប្រាស់។', 'monitor-play', 'text-indigo-600', 'bg-indigo-100');
-                return;
-            }
-            if(modalId === 'modal-social-msg') {
-                showMessage('បណ្ដាញសង្គម', 'មុខងារនេះនឹងនាំអ្នកទៅកាន់ទំព័រ Facebook, TikTok ឬ Telegram ផ្លូវការរបស់សាលាដោយផ្ទាល់។', 'link', 'text-blue-600', 'bg-blue-100');
-                return;
-            }
-
-            // Normal open
-            document.getElementById(modalId).classList.remove('hidden');
-            document.getElementById(modalId).classList.add('modal-active');
-            
-            // Reset password field if opening password modal
-            if(modalId === 'modal-password'){
-                document.getElementById('report-pwd-input').value = '';
-                document.getElementById('pwd-error').classList.add('hidden');
-            }
-        }
-
-        function closeModal(modalId) {
-            document.getElementById(modalId).classList.add('hidden');
-            document.getElementById(modalId).classList.remove('modal-active');
-        }
-
-        // Generic Message Modal Trigger
-        function showMessage(title, desc, iconName, iconColorClass, iconBgClass) {
-            document.getElementById('msg-title').innerText = title;
-            document.getElementById('msg-desc').innerText = desc;
-            
-            const iconContainer = document.getElementById('msg-icon');
-            iconContainer.className = `mx-auto w-16 h-16 rounded-full flex items-center justify-center mb-4 ${iconColorClass} ${iconBgClass}`;
-            
-            // Re-render icon
-            iconContainer.innerHTML = `<i data-lucide="${iconName}" class="w-8 h-8"></i>`;
-            lucide.createIcons();
-
-            document.getElementById('modal-message').classList.remove('hidden');
-            document.getElementById('modal-message').classList.add('modal-active');
-        }
-
-        // Generic Form Modal Trigger
-        function openForm(title) {
-            document.getElementById('form-title').innerText = title;
-            document.getElementById('modal-form').classList.remove('hidden');
-            document.getElementById('modal-form').classList.add('modal-active');
-        }
-
-        function submitForm() {
-            closeModal('modal-form');
-            showMessage('ជោគជ័យ', 'សាររបស់អ្នកត្រូវបានបញ្ជូនដោយជោគជ័យ! យើងនឹងទាក់ទងទៅអ្នកវិញក្នុងពេលឆាប់ៗនេះ។', 'check-circle', 'text-green-600', 'bg-green-100');
-        }
-
-        // Password Logic for Reports
-        function checkPassword() {
-            const pwdInput = document.getElementById('report-pwd-input').value;
-            const errorMsg = document.getElementById('pwd-error');
-
-            if (pwdInput === 'NyMao8888') {
-                closeModal('modal-password');
-                showMessage(
-                    'ចូលប្រើប្រាស់បានជោគជ័យ', 
-                    'ពាក្យសម្ងាត់ត្រឹមត្រូវ។ ខាងក្រោមនេះជាទិន្នន័យរបាយការណ៍សម្ងាត់...', 
-                    'unlock', 
-                    'text-green-600', 
-                    'bg-green-100'
-                );
-            } else {
-                errorMsg.classList.remove('hidden');
-            }
-        }
     </script>
 </body>
 </html>
